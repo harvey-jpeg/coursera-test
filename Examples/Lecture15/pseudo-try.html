@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pseudo selector try</title>
+        <style>
+            /* Style goes here */
+            header li {
+                list-style: none;
+            }
+            
+            a:link, a:visited {
+                text-decoration: none;
+                background-color: #04AA6D;
+                border: none;
+                color: black;
+                /*padding: 15px 32px;*/
+                display: inline-block;
+                width: 200px;
+                text-align: center;
+                margin-bottom: 1px;
+                
+            }
+            
+            a:hover, a:active {
+                background-color: #006b44;
+                color: rgb(236, 236, 236);
+            }
+            
+           header li:nth-child(3) {
+                font-size: 24px;
+           } 
+           
+           section div:nth-child(odd) {
+                background-color: rgb(107, 107, 234);
+           }
+
+           section div:nth-child(7):hover {
+                background-color: red;
+           }
+
+        </style>
+    </head>
+    <body>
+        <h1>Pseudo Class Selectors try lang </h1>
+
+        <header>
+            <ul>
+                <li><a href="/">LIKE</a></li>
+                <li><a href="/">SUBSCRIBE</a></li>
+                <li><a href="/">COMMENT</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <div>CLICK ME</div>
+            <div>CLICK ME</div>
+            <div>CLICK ME</div>
+            <div>CLICK ME</div>
+            <div>CLICK ME</div>
+            <div>CLICK ME</div>
+            <div>CLICK ME</div>
+            <div>CLICK ME</div>
+
+        </section>
+        
+    </body>
+
+</html>

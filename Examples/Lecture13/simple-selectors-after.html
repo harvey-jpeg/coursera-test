@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Selectors</title>
+        <style>
+            /* all h2 elements */
+            h2 {
+                color: red;
+                text-align: center;
+            }
+
+            /* all with class="highlight" */
+            .highlight { 
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+                background-color: green;
+                opacity: .6;
+            }
+
+            /* element with id="mainpoint" */ 
+            #mainPoint {
+                font-size: 20px;
+                font-weight: bold;
+                background-color: red;
+                opacity: .7;
+            }
+
+            /* all p AND h1 elements */            
+            p, h1 {
+                color: blue;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1>Simple Selectors (h1)</h1>
+        <h2>Subheading (h2)</h2>
+        <p class="highlight"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <p class="highlight"> Inceptos non libero lobortis orci vehicula diam, lobortis mi aliquet? Et litora torquent tortor et in! Ultrices quam augue imperdiet curabitur ullamcorper vivamus viverra semper. Neque torquent congue justo vehicula mus nibh quis. Varius imperdiet sociosqu sodales bibendum sodales maximus quam.</p>
+        <h2>Subheading 2 (h2) </h2>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Dui malesuada risus volutpat suscipit quam aliquam. Semper potenti sit fermentum mollis ac nam ullamcorper natoque. Sem platea litora vestibulum donec; fusce vivamus. Lectus ac sed curabitur ultrices phasellus elementum.
+        </p>
+        <div>This is the main point of the entire article. So attribute
+            <span id="mainPoint">id="mainPoint".</span>
+        </div>
+    </body>
+</html>
