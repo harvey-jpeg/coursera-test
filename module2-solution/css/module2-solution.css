@@ -1,0 +1,74 @@
+/**** Base Styles ****/
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+section {
+    background-color: gray;
+    border: 1px solid black;
+}
+
+div>p {
+    border:2px solid black;
+}
+
+p {
+    text-align: center;
+    background-color: gray;
+    width: 50%;
+    padding: 5px;
+    margin-right: right;
+    margin-left: auto;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#p1 {
+    background-color: rgb(132, 132, 252);
+}
+#p2 {
+    background-color: rgb(210, 239, 63);
+}
+#p3 {
+    background-color: rgb(211, 80, 80);
+}
+
+.grid-wrapper {
+    padding: 25px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+
+
+/**** Large Devices only ****/
+@media only screen and (min-width: 992px) {
+    .grid-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/**** Medium Devices Only ****/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .grid-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #section3 {
+        grid-column: span 2;
+    }
+}
+   
+
+/**** Small Devices Only ****/
+@media only screen and (max-width: 768px) {
+    .grid-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
